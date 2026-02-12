@@ -1,54 +1,54 @@
 # echoip
 
-[![ci](https://github.com/mpolden/echoip/actions/workflows/ci.yml/badge.svg)](https://github.com/mpolden/echoip/actions/workflows/ci.yml)
+[![ci](https://github.com/deovero/echoip/actions/workflows/ci.yml/badge.svg)](https://github.com/deovero/echoip/actions/workflows/ci.yml)
 
 A simple service for looking up your IP address. This is the code that powers
-https://ifconfig.co.
+https://ip.deovero.io.
 
 ## Usage
 
 Just the business, please:
 
 ```
-$ curl ifconfig.co
+$ curl ip.deovero.io
 127.0.0.1
 
-$ http ifconfig.co
+$ http ip.deovero.io
 127.0.0.1
 
-$ wget -qO- ifconfig.co
+$ wget -qO- ip.deovero.io
 127.0.0.1
 
-$ fetch -qo- https://ifconfig.co
+$ fetch -qo- https://ip.deovero.io
 127.0.0.1
 
-$ bat -print=b ifconfig.co/ip
+$ bat -print=b ip.deovero.io/ip
 127.0.0.1
 ```
 
 Country and city lookup:
 
 ```
-$ curl ifconfig.co/country
+$ curl ip.deovero.io/country
 Elbonia
 
-$ curl ifconfig.co/country-iso
+$ curl ip.deovero.io/country-iso
 EB
 
-$ curl ifconfig.co/city
+$ curl ip.deovero.io/city
 Bornyasherk
 
-$ curl ifconfig.co/asn
+$ curl ip.deovero.io/asn
 AS59795
 
-$ curl ifconfig.co/asn-org
+$ curl ip.deovero.io/asn-org
 Hosting4Real
 ```
 
 As JSON:
 
 ```
-$ curl -H 'Accept: application/json' ifconfig.co  # or curl ifconfig.co/json
+$ curl -H 'Accept: application/json' ip.deovero.io  # or curl ip.deovero.io/json
 {
   "city": "Bornyasherk",
   "country": "Elbonia",
@@ -63,7 +63,7 @@ $ curl -H 'Accept: application/json' ifconfig.co  # or curl ifconfig.co/json
 Port testing:
 
 ```
-$ curl ifconfig.co/port/80
+$ curl ip.deovero.io/port/80
 {
   "ip": "127.0.0.1",
   "port": 80,
@@ -98,7 +98,7 @@ between IPv4 and IPv6 lookup.
 Compiling requires the [Golang compiler](https://golang.org/) to be installed.
 This package can be installed with:
 
-`go install github.com/mpolden/echoip/...@latest`
+`go install github.com/deovero/echoip/...@latest`
 
 For more information on building a Go project, see the [official Go
 documentation](https://golang.org/doc/code.html).

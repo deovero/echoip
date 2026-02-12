@@ -1,4 +1,4 @@
-module github.com/mpolden/echoip
+module github.com/deovero/echoip
 
 go 1.24
 

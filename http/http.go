@@ -11,9 +11,9 @@ import (
 
 	"net/http/pprof"
 
-	"github.com/mpolden/echoip/iputil"
-	"github.com/mpolden/echoip/iputil/geo"
-	"github.com/mpolden/echoip/useragent"
+	"github.com/deovero/echoip/iputil"
+	"github.com/deovero/echoip/iputil/geo"
+	"github.com/deovero/echoip/useragent"
 
 	"math/big"
 	"net"

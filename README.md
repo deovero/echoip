@@ -1,6 +1,6 @@
 # echoip
 
-[![ci](https://github.com/mpolden/echoip/actions/workflows/ci.yml/badge.svg)](https://github.com/mpolden/echoip/actions/workflows/ci.yml)
+[![ci](https://github.com/deovero/echoip/actions/workflows/ci.yml/badge.svg)](https://github.com/deovero/echoip/actions/workflows/ci.yml)
 
 A simple service for looking up your IP address. This is the code that powers
 https://ifconfig.co.
@@ -98,7 +98,7 @@ between IPv4 and IPv6 lookup.
 Compiling requires the [Golang compiler](https://golang.org/) to be installed.
 This package can be installed with:
 
-`go install github.com/mpolden/echoip/...@latest`
+`go install github.com/deovero/echoip/...@latest`
 
 For more information on building a Go project, see the [official Go
 documentation](https://golang.org/doc/code.html).
